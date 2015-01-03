@@ -317,3 +317,29 @@ print(z)
 * `x.count(value)`: number of occurrences of `value`
 * `x.index(value)`: first occurrence of `value`
 * `len(x)`: length
+
+Is it worth mentioning +=?
+```{r pluseq}
+x = [1,2,3]
+y = [4,5]
+x += y
+print(x)
+
+# Also works on strings
+a = 'abc'
+b = 'xyz'
+a += b
+print(a)
+
+# and integers (often used in for and while loops)
+n = 0
+l = [1,2,3,4]
+for i in l:
+	n += i
+	print(n)
+
+n = 0
+while n < 5:
+	n += 1
+	print(n)
+```
